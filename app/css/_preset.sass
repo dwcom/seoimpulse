@@ -3,6 +3,11 @@ $hover: #B6B4B4
 $green: #358E3F
 $black: #000
 
+body
+	font-family: 'Montserrat', sans-serif
+	font-size: 16px
+	line-height: 1.5
+	
 .container
 	max-width: 1280px
 	margin: 0 auto
@@ -23,7 +28,7 @@ $black: #000
 	
 .fs
 	&-24
-		font-size: 25px
+		font-size: 24px
 		
 	&-32
 		font-size: 32px
@@ -177,11 +182,6 @@ $black: #000
 	&-4
 		grid-template-columns: 1fr 1fr 1fr 1fr
 	
-	&-5
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-	
-	&-6
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr
 		
 .gap
 	&-1
@@ -318,7 +318,60 @@ $black: #000
 	select
 		height: 34px
 @media( max-width: 1280px )
+	body
+		font-size: 15px
+		
+	.fs
+		&-24
+			font-size: 22px
+		
+		&-32
+			font-size: 30px
+			
 	.container
 		max-width: 100%
 		padding-left: 3%
 		padding-right: 3%
+		
+@media( max-width: 1024px )
+	.grid
+		&-1
+			grid-template-columns: 1fr
+		
+		&-2
+			grid-template-columns: 1fr 1fr
+		
+		&-3
+			grid-template-columns: 1fr 1fr
+		
+		&-4
+			grid-template-columns: 1fr 1fr
+
+@media( max-width: 840px )
+	body
+		font-size: 14px
+	
+	.fs
+		&-24
+			font-size: 20px
+		
+		&-32
+			font-size: 26px
+			
+@media( max-width: 640px )
+	body
+		font-size: 14px
+	
+	.fs
+		&-24
+			font-size: 20px
+		
+		&-32
+			font-size: 26px
+			
+	.grid
+		&-1,
+		&-2,
+		&-3,
+		&-4
+			grid-template-columns: 1fr

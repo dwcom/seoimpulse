@@ -8,14 +8,14 @@
 						<li>
 							<a href="#"><span>Приложения</span></a>
 							<ul class="submenu">
-								<li><a href="#">Подменю 1 - Уровень 1</a></li>
-								<li><a href="#">Подменю 2 - Уровень 1</a></li>
+								<li><a href="#"><span>Подменю 1 - Уровень 1</span></a></li>
+								<li><a href="#"><span>Подменю 2 - Уровень 1</span></a></li>
 								<li>
-									<a href="#">Подменю 3 - Уровень 1</a>
+									<a href="#"><span>Подменю 3 - Уровень 1</span></a>
 									<ul class="submenu">
-										<li><a href="#">Подменю 1 - Уровень 2</a></li>
-										<li><a href="#">Подменю 2 - Уровень 2</a></li>
-										<li><a href="#">Подменю 2 - Уровень 2</a></li>
+										<li><a href="#"><span>Подменю 1 - Уровень 2</span></a></li>
+										<li><a href="#"><span>Подменю 2 - Уровень 2</span></a></li>
+										<li><a href="#"><span>Подменю 2 - Уровень 2</span></a></li>
 									</ul>
 								</li>
 							</ul>

@@ -2,11 +2,6 @@
 @import 'reset'
 @import 'preset'
 
-body
-	font-family: 'Montserrat', sans-serif
-	font-size: 16px
-	line-height: 1.5
-	
 .header
 	&__wrap
 		background: $grey
@@ -296,5 +291,116 @@ body
 			display: none
 	&__submit
 		padding: 0 1rem
+		
+		
+@media (max-width: 1024px)
+	.about
+		&__grid
+			margin-top: 2rem
+			grid-template-columns: 1fr
+			
+		&__image
+			display: none
+			
+
+@media (max-width: 840px)
+	.service
+		.item
+			min-height: 280px
+			
+	.header
+		&__bar
+			display: flex
+			gap: .5rem
+			background: $grey
+			padding: .5rem
+			justify-content: right
+			
+			img
+				width: 30px
+				height: 30px
+				
+		&__menu
+			position: fixed
+			left: -500px
+			top: 0
+			bottom: 0
+			width: 280px
+			background: white
+			box-shadow: 0 0 15px #3335
+			z-index: 5
+			transition: .3s
+			
+			&.active
+				left: 0
+			
+			.dropdown
+				transform: rotate(-180deg)
+				transition: .3s
+				
+				&.active
+					transform: rotate(0deg)
+			
+			span
+				display: flex
+				align-items: center
+				justify-content: space-between !important
+			
+			.submenu
+				position: relative
+				display: none
+				width: auto
+				border: 0
+				background: white
+				
+			> ul
+				display: grid
+				justify-content: normal
+				
+				> li
+					padding-right: 0
+					border-right: 0
+					margin: 0 1rem
+					
+					&:hover
+						.submenu
+							display: none
+					
+					> a
+						padding: 1rem
+						border-bottom: 1px solid #ccc
+						
+						span
+							justify-content: normal
+							text-align: left
+							
+					> .submenu
+						> li
+							&:hover
+								.submenu
+									display: none
+							
+							> .submenu
+								left: auto
+	.breadcrumb
+		&__title
+			background: white
+			padding: 5px
+			
+		&__ul
+			font-size: 8px
+			gap: .5rem
+			
+			a
+				display: flex
+				align-items: center
+				
+				&:after
+					margin-left: .5rem
+					position: relative
+					top: 2px
+	.footer
+		&__actions
+			margin-top: 2rem
 			
 			
